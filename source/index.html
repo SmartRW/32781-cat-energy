@@ -6,16 +6,15 @@
   </head>
   <body>
     <header class="header">
-      <a>
-        <img class="logo" src="https://placehold.it/33x38" width="33" height="38" alt="Логотип магазина Cat Energy">
+      <a class="logo">
+        <img class="logo__logo-image" src="https://placehold.it/33x38" width="33" height="38" alt="Логотип магазина Cat Energy">
+        <span class="logo__company-name logo__company-name_size_small">
+          <b>Cat</b> energy
+        </span>
       </a>
-      <div class="company-name">
-        <span class="company-name__first-word company-name__first-word_size_small">Cat</span>
-        <span class="company-name__second-word company-name__second-word_size_small">energy</span>
-      </div>
-      <a class="menu-button menu-button_closed" href="#">
-        <span class="visually-hidden">Открыть меню</span>
-      </a>
+      <button class="menu-button menu-button_opened" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
       <nav class="main-navigation">
         <ul class = "project-list">
           <li class="main-navigation__item">
@@ -35,8 +34,8 @@
       <section class="promo">
         <h2 class="promo__header">Функциональное питание для котов</h2>
         <span class="promo__motto">Занялся собой? Займись котом!</span>
-        <img class="promo__image" src="https://placehold.it/280x270" width="280", height="270" alt="Cat energy pro Курица">
-        <a class="button promo__button" href="./form.html">
+        <img class="promo__image" src="https://placehold.it/280x270" width="280" height="270" alt="Cat energy pro Курица">
+        <a class="button promo__button button_theme_green" href="./form.html">
           Подобрать программу
         </a>
       </section>
@@ -92,55 +91,60 @@
             Затраты на питание: 15 000 руб.
           </li>
         </ul>
-        <img class="customer-photo" src="https://placehold.it/311x323" width="311" height="323" alt="">
-        <div class="progress-bar">
-          <span class="progress-bar__description">Было</span>
-          <span class="progress-bar__graph">
-            <span class="visually-hidden">-50%</span>
-          </span>
-          <span class="progress-bar__description">Стало</span>
+        <div class="slider">
+          <ul class="project-list slider__list">
+            <li class="slider__image">
+              <img class="customer-photo" src="https://placehold.it/311x323" width="311" height="323" alt="Борис до приема функционального питания">
+            </li>
+            <li class="slider__image js-slider-hidden">
+              <img class="customer-photo" src="https://placehold.it/311x323" width="311" height="323" alt="Борис после приема функционального питания">
+            </li>
+          </ul>
+          <div class="slider__controls">
+            <button class="slider__control" type="button">Было</button>
+            <span class="slider__progress-bar"></span>
+            <button class="slider__control" type="button">Стало</button>
+          </div>
         </div>
       </section>
-      <section class="about-us">
-        <span class="about-us__partnership">
-          Приглашаем к сотрудничеству дилеров!
-        </span>
-        <span class="about-us__address">
-          ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8 Санкт&#8209;Петербург
-        </span>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5960254004071!2d30.323512435998538!3d59.93884526902531!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2s!4v1538212261868" width="100%" height="645">
-          <span class="visually-hidden">Как к нам добраться</span>
-        </iframe>
-      </section>
-      <footer class="footer">
-        <div class="company-name">
-          <span class="company-name__first-word company-name__first-word_size_large">Cat</span>
-          <span class="company-name__second-word company-name__second-word_size_large">energy</span>
-        </div>
-        <ul class="project-list social-list">
-          <li>
-            <a class="social-button social-button_iconed_vk" href="#" >
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li>
-            <a class="social-button social-button_iconed_instagram" href="#" >
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-          <li>
-            <a class="social-button social-button_iconed_fb" href="#" >
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-        </ul>
-        <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
-          HTML Academy
-        </a>
-        <a class="academy-logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">Логотип HTML Академии</span>
-        </a>
-      </footer>
     </main>
+    <footer class="footer">
+      <span class="footer__partnership">
+        Приглашаем к сотрудничеству дилеров!
+      </span>
+      <span class="footer__address">
+        ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8 Санкт&#8209;Петербург
+      </span>
+      <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5960254004071!2d30.323512435998538!3d59.93884526902531!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2s!4v1538212261868" width="320" height="645">
+      </iframe>
+      <a class="logo" href="#">
+        <span class="logo__company-name logo__company-name_size_large">
+          <b>Cat</b> energy
+        </span>
+      </a>
+      <ul class="project-list social-list">
+        <li>
+          <a class="social-button social-button_iconed_vk" href="#" >
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-button social-button_iconed_instagram" href="#" >
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-button social-button_iconed_fb" href="#" >
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+      </ul>
+      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        HTML Academy
+      </a>
+      <a class="academy-logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">Логотип HTML Академии</span>
+      </a>
+    </footer>
   </body>
 </html>
