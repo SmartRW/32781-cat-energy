@@ -5,8 +5,142 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+    <header class="header">
+      <a>
+        <img class="logo" src="https://placehold.it/33x38" width="33" height="38" alt="Логотип магазина Cat Energy">
+      </a>
+      <div class="company-name">
+        <span class="company-name__first-word company-name__first-word_size_small">Cat</span>
+        <span class="company-name__second-word company-name__second-word_size_small">energy</span>
+      </div>
+      <a class="menu-button menu-button_closed" href="#">
+        <span class="visually-hidden">Открыть меню</span>
+      </a>
+      <nav class="main-navigation">
+        <ul class = "project-list">
+          <li class="main-navigation__item">
+            <a>Главная</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="./catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="./form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1 class="visually-hidden">Магазин функционального питания для котов</h1>
+      <section class="promo">
+        <h2 class="promo__header">Функциональное питание для котов</h2>
+        <span class="promo__motto">Занялся собой? Займись котом!</span>
+        <img class="promo__image" src="https://placehold.it/280x270" width="280", height="270" alt="Cat energy pro Курица">
+        <a class="button promo__button" href="./form.html">
+          Подобрать программу
+        </a>
+      </section>
+      <section class="program-types">
+        <h2 class="visually-hidden">Типы программ</h2>
+        <article class="program">
+          <h3 class="program__header program__header_iconed_slim">Похудение</h3>
+          <p class="program__description">
+            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбосить лишний вес.
+          </p>
+          <a href="#" class="program__link-to-catalog">Каталог Slim</a>
+        </article>
+        <article class="program">
+          <h3 class="program__header program__header_iconed_slim">Набор массы</h3>
+          <p class="program__description">
+            Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мыщцы!
+          </p>
+          <a href="#" class="program__link-to-catalog">Каталог Pro</a>
+        </article>
+      </section>
+      <section class="features">
+        <h2 class="section-header">Как это работает</h2>
+        <ul class="project-list features-list">
+          <li class="features-item features-item_iconed_leaf">
+            Функциональное питание содержит только полезные питательные вещества.
+          </li>
+          <li class="features-item features-item_iconed_water">
+            Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+          </li>
+          <li class="features-item features-item_iconed_fork-knife">
+            Замените один-два приема обычной еды на наше функциональное питание.
+          </li>
+          <li class="features-item features-item_iconed_clock">
+            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+          </li>
+        </ul>
+      </section>
+      <section class="usage-example">
+        <h2 class="section-header">Живой пример</h2>
+        <p class="usage-example__description">
+          Борис сбросил 5 кг за два месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <ul class="project-list usage-figures">
+          <li class="usage-data">
+            <span class="usage-data__key">снижение веса</span>
+            <span class="usage-data__value">5 кг</span>
+          </li>
+          <li class="usage-data">
+            <span class="usage-data__key">затрачено времени</span>
+            <span class="usage-data__value">60 дней</span>
+          </li>
+          <li class="usage-cost">
+            Затраты на питание: 15 000 руб.
+          </li>
+        </ul>
+        <img class="customer-photo" src="https://placehold.it/311x323" width="311" height="323" alt="">
+        <div class="progress-bar">
+          <span class="progress-bar__description">Было</span>
+          <span class="progress-bar__graph">
+            <span class="visually-hidden">-50%</span>
+          </span>
+          <span class="progress-bar__description">Стало</span>
+        </div>
+      </section>
+      <section class="about-us">
+        <span class="about-us__partnership">
+          Приглашаем к сотрудничеству дилеров!
+        </span>
+        <span class="about-us__address">
+          ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8 Санкт&#8209;Петербург
+        </span>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5960254004071!2d30.323512435998538!3d59.93884526902531!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2s!4v1538212261868" width="100%" height="645">
+          <span class="visually-hidden">Как к нам добраться</span>
+        </iframe>
+      </section>
+      <footer class="footer">
+        <div class="company-name">
+          <span class="company-name__first-word company-name__first-word_size_large">Cat</span>
+          <span class="company-name__second-word company-name__second-word_size_large">energy</span>
+        </div>
+        <ul class="project-list social-list">
+          <li>
+            <a class="social-button social-button_iconed_vk" href="#" >
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-button social-button_iconed_instagram" href="#" >
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-button social-button_iconed_fb" href="#" >
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+        </ul>
+        <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          HTML Academy
+        </a>
+        <a class="academy-logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">Логотип HTML Академии</span>
+        </a>
+      </footer>
+    </main>
   </body>
 </html>
