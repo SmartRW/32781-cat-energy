@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="./index.html">
+        <img class="logo__logo-image" src="https://placehold.it/33x38" width="33" height="38" alt="Логотип магазина Cat Energy">
+        <span class="logo__company-name logo__company-name_size_small">
+          <b>Cat</b> energy
+        </span>
+      </a>
+      <button class="menu-button menu-button_opened" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
+      <nav class="main-navigation">
+        <ul class="project-list">
+          <li class="main-navigation__item">
+            <a href="./index.html">Главная</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="./catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-navigation__item">
+            <a>Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1 class="page-header">Подбор программы</h1>
+      <form class="program-picking" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="program-picking__description">
+          Заполните анкету и мы программу питания для вашего кота
+        </p>
+        <fieldset class="program-picking__fieldset">
+          <ul class="project-list program-picking__inputs-list">
+            <li class="program-picking__input-item">
+              <label class="program-picking__field-description" for="cat-name">
+                Имя:*
+              </label>
+              <input class="program-picking__text-field" type="text" id="cat-name" name="cat-name" placeholder="Барсик" required>
+            </li>
+            <li class="program-picking__input-item">
+              <label class="program-picking__field-description" for="cat-weight">
+                Вес (кг):*
+              </label>
+              <input class="program-picking__text-field" type="text" id="cat-weight" name="cat-weight" placeholder="7" required>
+            </li>
+            <li class="program-picking__input-item">
+              <label class="program-picking__field-description" for="cat-age">
+                Возраст:*
+              </label>
+              <input class="program-picking__text-field" type="text" id="cat-age" name="cat-age" placeholder="7" required>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="program-picking__fieldset">
+          <ul class="project-list program-picking__inputs-list">
+            <li class="program-picking__input-item">
+              <input class="visually-hidden" type="radio" id="weight-loss" value="weight-loss" name="program-target" checked>
+              <label class="program-picking__radio" for="weight-loss">
+                Похудение
+              </label>
+            </li>
+            <li class="program-picking__input-item">
+              <input class="visually-hidden" type="radio" id="weight-gain" value="weight-gain" name="program-target">
+              <label class="program-picking__radio" for="weight-gain">
+                Набор веса
+              </label>
+            </li>
+            <li class="program-picking__input-item">
+              <input class="visually-hidden" type="radio" id="advise-required" value="advise-required" name="program-target">
+              <label class="program-picking__radio" for="advise-required">
+                Не знаю (нужен ваш совет)
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="program-picking__fieldset">
+          <legend class="program-picking__fieldset-header">
+            Контактные данные (владельца кота)
+          </legend>
+          <ul class="project-list program-picking__inputs-list">
+            <li class="program-picking__input-item">
+              <label class="program-picking__field-description" for="owner-email">
+                E-mail:*
+              </label>
+              <input class="program-picking__text-field" type="email" id="owner-email" name="owner-email" placeholder="kuklachev@gmail.com" required>
+            </li>
+            <li class="program-picking__input-item">
+              <label class="program-picking__field-description" for="owner-phone">
+                Телефон:*
+              </label>
+              <input class="program-picking__text-field" type="tel" id="owner-phone" name="owner-phone" placeholder="8 (960) 900-60-90" required>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="program-picking__fieldset">
+          <legend class="program-picking__fieldset-header">
+            Комментарий
+          </legend>
+          <textarea class="program-picking__comment-field" name="comment" placeholder="Расскажите обо всех повадках кота">
+          </textarea>
+        </fieldset>
+        <fieldset class="program-picking__fieldset">
+          <legend class="program-picking__fieldset-header">
+            Дополнительно
+          </legend>
+          <ul class="project-list program-picking__inputs-list">
+            <li class="program-picking__input-item">
+              <label class="program-picking__field-description" for="sweetener">
+                Сахарозаменитель
+              </label>
+              <input class="program-picking__checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
+            </li>
+            <li class="program-picking__input-item">
+              <label class="program-picking__field-description" for="water">
+                Питьевая вода
+              </label>
+              <input class="program-picking__checkbox" type="checkbox" id="water" name="water">
+            </li>
+            <li class="program-picking__input-item">
+              <label class="program-picking__field-description" for="milk">
+                Молоко
+              </label>
+              <input class="program-picking__checkbox" type="checkbox" id="milk" name="milk">
+            </li>
+            <li class="program-picking__input-item">
+              <label class="program-picking__field-description" for="vitamins">
+                Витамины
+              </label>
+              <input class="program-picking__checkbox" type="checkbox" id="vitamins" name="vitamins">
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button button_theme_green" type="submit">
+          Отправить заявку
+        </button>
+        <span class="program-picking__footnote">
+          * &#8211; Обязательные поля
+        </span>
+      </form>
+    </main>
+    <footer class="footer">
+      <span class="footer__partnership">
+        Приглашаем к сотрудничеству дилеров!
+      </span>
+      <span class="footer__address">
+        ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8 Санкт&#8209;Петербург
+      </span>
+      <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5960254004071!2d30.323512435998538!3d59.93884526902531!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2s!4v1538212261868" width="320" height="645">
+      </iframe>
+      <a class="logo" href="./index.html">
+        <span class="logo__company-name logo__company-name_size_large">
+          <b>Cat</b> energy
+        </span>
+      </a>
+      <ul class="project-list social-list">
+        <li>
+          <a class="social-button social-button_iconed_vk" href="#" >
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-button social-button_iconed_instagram" href="#" >
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-button social-button_iconed_fb" href="#" >
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+      </ul>
+      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        HTML Academy
+      </a>
+      <a class="academy-logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">Логотип HTML Академии</span>
+      </a>
+    </footer>
+  </body>
+</html>
