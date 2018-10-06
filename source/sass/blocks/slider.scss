@@ -1,0 +1,25 @@
+.slider__item {
+  text-align: center;
+}
+
+.slider__control {
+  background: none;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  font-family: $oswald-regular;
+  font-size: 16px;
+  line-height: 20px;
+  color: $grey-header;
+  text-transform: uppercase;
+}
+
+.slider__progress-bar {
+  display: block;
+  box-sizing: border-box;
+  width: 84px;
+  height: 14px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  background-color: #ffffff;
+}

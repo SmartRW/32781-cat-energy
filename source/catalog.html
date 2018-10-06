@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page">
     <header class="header">
-      <a class="logo" href="./index.html">
-        <img class="logo__logo-image" src="https://placehold.it/33x38" width="33" height="38" alt="Логотип магазина Cat Energy">
-        <span class="logo__company-name logo__company-name_size_small">
-          <b>Cat</b> energy
-        </span>
-      </a>
-      <button class="menu-button menu-button_opened" type="button">
-        <span class="visually-hidden">Закрыть меню</span>
-      </button>
+      <div class="header__wrapper">
+        <a class="header__logo" href="./index.html">
+          <img class="header__logo-image" src="./img/logo-mobile.svg" width="191" height="38" alt="Логотип магазина Cat Energy">
+        </a>
+        <button class="menu-button menu-button_opened" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+      </div>
       <nav class="main-navigation">
         <ul class="project-list">
           <li class="main-navigation__item">
@@ -34,8 +34,8 @@
       <section class="product-list">
         <h2 class="visually-hidden">Функциональное питание</h2>
         <article class="product-card">
-          <img class="product-card__image" src="https://placehold.it/140x144" width="140" height="144" alt="Cat energy pro 500 г">
-          <h3 class="product-card__name">Cat energy pro 500 г</h3>
+          <img class="product-card__image" src="./img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat energy pro 500 г">
+          <h3 class="product-card__name">Cat energy<br>pro 500 г</h3>
           <table class="product-card__data">
             <tr>
               <td class="product-card__property">Объем</td>
@@ -50,11 +50,11 @@
               <td class="product-card__value">700 Р.</td>
             </tr>
           </table>
-          <a class="button button_theme_green" href="#">Заказать</a>
+          <a class="button product-card__button button_theme_green" href="#">Заказать</a>
         </article>
         <article class="product-card">
-          <img class="product-card__image" src="https://placehold.it/140x144" width="140" height="144" alt="Cat energy pro 1000 г">
-          <h3 class="product-card__name">Cat energy pro 1000 г</h3>
+          <img class="product-card__image" src="./img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Cat energy pro 1000 г">
+          <h3 class="product-card__name">Cat energy<br>pro 1000 г</h3>
           <table class="product-card__data">
             <tr>
               <td class="product-card__property">Объем</td>
@@ -69,11 +69,11 @@
               <td class="product-card__value">1000 Р.</td>
             </tr>
           </table>
-          <a class="button button_theme_green" href="#">Заказать</a>
+          <a class="button product-card__button button_theme_green" href="#">Заказать</a>
         </article>
         <article class="product-card">
-          <img class="product-card__image" src="https://placehold.it/140x144" width="140" height="144" alt="Cat energy pro 500 г">
-          <h3 class="product-card__name">Cat energy pro 500 г</h3>
+          <img class="product-card__image" src="./img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Cat energy pro 500 г">
+          <h3 class="product-card__name">Cat energy<br>pro 500 г</h3>
           <table class="product-card__data">
             <tr>
               <td class="product-card__property">Объем</td>
@@ -88,11 +88,11 @@
               <td class="product-card__value">700 Р.</td>
             </tr>
           </table>
-          <a class="button button_theme_green" href="#">Заказать</a>
+          <a class="button product-card__button button_theme_green" href="#">Заказать</a>
         </article>
         <article class="product-card">
-          <img class="product-card__image" src="https://placehold.it/140x144" width="140" height="144" alt="Cat energy pro 1000 г">
-          <h3 class="product-card__name">Cat energy pro 1000 г</h3>
+          <img class="product-card__image" src="./img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Cat energy pro 1000 г">
+          <h3 class="product-card__name">Cat energy<br>pro 1000 г</h3>
           <table class="product-card__data">
             <tr>
               <td class="product-card__property">Объем</td>
@@ -107,11 +107,11 @@
               <td class="product-card__value">1000 Р.</td>
             </tr>
           </table>
-          <a class="button button_theme_green" href="#">Заказать</a>
+          <a class="button product-card__button button_theme_green" href="#">Заказать</a>
         </article>
         <article class="product-card">
-          <img class="product-card__image" src="https://placehold.it/140x144" width="140" height="144" alt="Cat energy slim 500 г">
-          <h3 class="product-card__name">Cat energy slim 500 г</h3>
+          <img class="product-card__image" src="./img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat energy slim 500 г">
+          <h3 class="product-card__name">Cat energy<br>slim 500 г</h3>
           <table class="product-card__data">
             <tr>
               <td class="product-card__property">Объем</td>
@@ -126,11 +126,11 @@
               <td class="product-card__value">400 Р.</td>
             </tr>
           </table>
-          <a class="button button_theme_green" href="#">Заказать</a>
+          <a class="button product-card__button button_theme_green" href="#">Заказать</a>
         </article>
         <article class="product-card">
-          <img class="product-card__image" src="https://placehold.it/140x144" width="140" height="144" alt="Cat energy slim 1000 г">
-          <h3 class="product-card__name">Cat energy slim 1000 г</h3>
+          <img class="product-card__image" src="./img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Cat energy slim 1000 г">
+          <h3 class="product-card__name">Cat energy<br>slim 1000 г</h3>
           <table class="product-card__data">
             <tr>
               <td class="product-card__property">Объем</td>
@@ -145,11 +145,11 @@
               <td class="product-card__value">700 Р.</td>
             </tr>
           </table>
-          <a class="button button_theme_green" href="#">Заказать</a>
+          <a class="button product-card__button button_theme_green" href="#">Заказать</a>
         </article>
         <article class="product-card">
-          <img class="product-card__image" src="https://placehold.it/140x144" width="140" height="144" alt="Cat energy slim 500 г">
-          <h3 class="product-card__name">Cat energy slim 500 г</h3>
+          <img class="product-card__image" src="./img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Cat energy slim 500 г">
+          <h3 class="product-card__name">Cat energy<br>slim 500 г</h3>
           <table class="product-card__data">
             <tr>
               <td class="product-card__property">Объем</td>
@@ -164,15 +164,15 @@
               <td class="product-card__value">500 Р.</td>
             </tr>
           </table>
-          <a class="button button_theme_green" href="#">Заказать</a>
+          <a class="button product-card__button button_theme_green" href="#">Заказать</a>
         </article>
         <div class="show-more">
           <a class="show-more__expand-button" href="#">
             Показать еще 100500 товаров
           </a>
-          <span class="show-more__description">
+          <p class="show-more__description">
             На самом деле вкусов гораздо больше!
-          </span>
+          </p>
           <a class="button button_theme_grey" href="#">Показать еще</a>
         </div>
       </section>
@@ -180,51 +180,51 @@
         <h2 class="extras__header">
           Дополнительные товары
         </h2>
-        <article class="extras-card">
-          <h3 class="extras-card__product-name">Сахарозаменитель</h3>
-          <table class="extras-data">
+        <article class="extras__card">
+          <h3 class="extras__product-name">Сахарозаменитель</h3>
+          <table class="extras__data">
             <tr>
               <td class="extras__volume">1 упаковка (100 г)</td>
               <td class="extras__price">100 Р.</td>
             </tr>
           </table>
-          <a class="button button_theme_green" href="#">Заказать</a>
+          <a class="button extras__button button_theme_green" href="#">Заказать</a>
         </article>
-        <article class="extras-card">
-          <h3 class="extras-card__product-name">Питьевая вода</h3>
-          <table class="extras-data">
+        <article class="extras__card">
+          <h3 class="extras__product-name">Питьевая вода</h3>
+          <table class="extras__data">
             <tr>
               <td class="extras__volume">5 литров</td>
               <td class="extras__price">50 Р.</td>
             </tr>
           </table>
-          <a class="button button_theme_green" href="#">Заказать</a>
+          <a class="button extras__button button_theme_green" href="#">Заказать</a>
         </article>
-        <article class="extras-card">
-          <h3 class="extras-card__product-name">Молоко</h3>
-          <table class="extras-data">
+        <article class="extras__card">
+          <h3 class="extras__product-name">Молоко</h3>
+          <table class="extras__data">
             <tr>
               <td class="extras__volume">1 литр</td>
               <td class="extras__price">100 Р.</td>
             </tr>
           </table>
-          <a class="button button_theme_green" href="#">Заказать</a>
+          <a class="button extras__button button_theme_green" href="#">Заказать</a>
         </article>
-        <article class="extras-card">
-          <h3 class="extras-card__product-name">Витамины</h3>
-          <table class="extras-data">
+        <article class="extras__card">
+          <h3 class="extras__product-name">Витамины</h3>
+          <table class="extras__data">
             <tr>
               <td class="extras__volume">1 упаковка (30 г)</td>
               <td class="extras__price">300 Р.</td>
             </tr>
           </table>
-          <a class="button button_theme_green" href="#">Заказать</a>
+          <a class="button extras__button button_theme_green" href="#">Заказать</a>
         </article>
       </section>
       <section class="promo-offer">
         <h2 class="visually-hidden">Горячее предложение</h2>
         <p class="promo-offer__description">
-          Закажите все и получите чехол для кота в подарок!
+          Закажите все и&nbsp;получите чехол для кота в подарок!
         </p>
       </section>
     </main>
@@ -237,29 +237,27 @@
       </span>
       <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5960254004071!2d30.323512435998538!3d59.93884526902531!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2s!4v1538212261868" width="320" height="645">
       </iframe>
-      <a class="logo" href="./index.html">
-        <span class="logo__company-name logo__company-name_size_large">
-          <b>Cat</b> energy
-        </span>
+      <a class="footer__logo" href="./index.html">
+        <img class="footer__logo-image" src="./img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
       </a>
       <ul class="project-list social-list">
         <li>
-          <a class="social-button social-button_iconed_vk" href="#" >
+          <a class="social-list__button social-list__button_iconed_vk" href="#">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li>
-          <a class="social-button social-button_iconed_instagram" href="#" >
+          <a class="social-list__button social-list__button_iconed_instagram" href="#">
             <span class="visually-hidden">Инстаграм</span>
           </a>
         </li>
         <li>
-          <a class="social-button social-button_iconed_fb" href="#" >
+          <a class="social-list__button social-list__button_iconed_fb" href="#">
             <span class="visually-hidden">Фейсбук</span>
           </a>
         </li>
       </ul>
-      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
         HTML Academy
       </a>
       <a class="academy-logo" href="https://htmlacademy.ru/intensive/adaptive">

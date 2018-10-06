@@ -3,14 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page">
     <header class="header">
-      <a class="logo" href="./index.html">
-        <img class="logo__logo-image" src="https://placehold.it/33x38" width="33" height="38" alt="Логотип магазина Cat Energy">
-        <span class="logo__company-name logo__company-name_size_small">
-          <b>Cat</b> energy
-        </span>
+      <a class="header__logo" href="./index.html">
+        <img class="header__logo-image" src="./img/logo-mobile.svg" width="191" height="38" alt="Логотип магазина Cat Energy">
       </a>
       <button class="menu-button menu-button_opened" type="button">
         <span class="visually-hidden">Закрыть меню</span>
@@ -102,8 +100,7 @@
           <legend class="program-picking__fieldset-header">
             Комментарий
           </legend>
-          <textarea class="program-picking__comment-field" name="comment" placeholder="Расскажите обо всех повадках кота">
-          </textarea>
+          <textarea class="program-picking__comment-field" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="program-picking__fieldset">
           <legend class="program-picking__fieldset-header">
@@ -114,25 +111,25 @@
               <label class="program-picking__field-description" for="sweetener">
                 Сахарозаменитель
               </label>
-              <input class="program-picking__checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
+              <input class="visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked>
             </li>
             <li class="program-picking__input-item">
               <label class="program-picking__field-description" for="water">
                 Питьевая вода
               </label>
-              <input class="program-picking__checkbox" type="checkbox" id="water" name="water">
+              <input class="visually-hidden" type="checkbox" id="water" name="water">
             </li>
             <li class="program-picking__input-item">
               <label class="program-picking__field-description" for="milk">
                 Молоко
               </label>
-              <input class="program-picking__checkbox" type="checkbox" id="milk" name="milk">
+              <input class="visually-hidden" type="checkbox" id="milk" name="milk">
             </li>
             <li class="program-picking__input-item">
               <label class="program-picking__field-description" for="vitamins">
                 Витамины
               </label>
-              <input class="program-picking__checkbox" type="checkbox" id="vitamins" name="vitamins">
+              <input class="visually-hidden" type="checkbox" id="vitamins" name="vitamins">
             </li>
           </ul>
         </fieldset>
@@ -153,29 +150,27 @@
       </span>
       <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5960254004071!2d30.323512435998538!3d59.93884526902531!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2s!4v1538212261868" width="320" height="645">
       </iframe>
-      <a class="logo" href="./index.html">
-        <span class="logo__company-name logo__company-name_size_large">
-          <b>Cat</b> energy
-        </span>
+      <a class="footer__logo" href="./index.html">
+        <img class="footer__logo-image" src="./img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
       </a>
       <ul class="project-list social-list">
         <li>
-          <a class="social-button social-button_iconed_vk" href="#" >
+          <a class="social-list__button social-list__button_iconed_vk" href="#">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li>
-          <a class="social-button social-button_iconed_instagram" href="#" >
+          <a class="social-list__button social-list__button_iconed_instagram" href="#">
             <span class="visually-hidden">Инстаграм</span>
           </a>
         </li>
         <li>
-          <a class="social-button social-button_iconed_fb" href="#" >
+          <a class="social-list__button social-list__button_iconed_fb" href="#">
             <span class="visually-hidden">Фейсбук</span>
           </a>
         </li>
       </ul>
-      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
         HTML Academy
       </a>
       <a class="academy-logo" href="https://htmlacademy.ru/intensive/adaptive">

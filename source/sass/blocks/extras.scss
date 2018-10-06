@@ -1,0 +1,29 @@
+.extras__header {
+  font-family: $oswald-regular;
+  font-size: 24px;
+  line-height: 24px;
+  color: $grey-header;
+}
+
+.extras__card {
+  border-top: 1px solid #cdcdcd;
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.extras__product-name {
+  @include product-header;
+  line-height: 16px;
+}
+
+.extras__data {
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 14px;
+  color: $grey-header;
+}
+
+.extras__price {
+  text-align: right;
+}

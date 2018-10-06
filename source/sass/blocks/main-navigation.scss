@@ -1,0 +1,16 @@
+.main-navigation {
+
+}
+
+.main-navigation__item {
+  display: block;
+  padding: 20px 0;
+  border-bottom: 1px solid #e6e6e6;
+  font-family: $oswald-medium;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: #111111;
+}

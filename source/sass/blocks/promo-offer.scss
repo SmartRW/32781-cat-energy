@@ -1,0 +1,18 @@
+.promo-offer {
+  width: 280px;
+  min-height: 289px;
+  box-sizing: border-box;
+  padding: 50px;
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #63a73a;
+  text-align: center;
+}
+
+.promo-offer__description {
+  font-family: $arial;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}

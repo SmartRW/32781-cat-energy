@@ -1,0 +1,13 @@
+.menu-button {
+  display: block;
+  width: 65px;
+  height: 65px;
+  background-color: transparent;
+  border: none;
+  &-opened {
+    background-image: none;
+  }
+  &-closed {
+    background-image: none;
+  }
+}

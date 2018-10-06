@@ -1,0 +1,7 @@
+.features__header {
+  @include section-header;
+}
+
+.features__item {
+  @include common-text;
+}

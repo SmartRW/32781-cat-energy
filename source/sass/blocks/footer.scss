@@ -1,0 +1,26 @@
+.footer__partnership {
+  width: 50%;
+  @include product-header;
+}
+
+.footer__address {
+  width: 50%;
+  @include common-text;
+  line-height: 20px;
+}
+
+.footer__map {
+  display: block;
+  border: none;
+  background-image: url("../../img/map.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f9f9f9;
+}
+
+.footer__copyright {
+  font-family: $arial;
+  font-size: 16px;
+  line-height: 16px;
+  color: $grey-text;
+}
