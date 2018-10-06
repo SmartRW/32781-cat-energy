@@ -10,16 +10,19 @@
   display: block;
   width: 30px;
   height: 30px;
+
   &_iconed_vk {
     background-image: url("../../img/icon-vk-mobile.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
+
   &_iconed_instagram {
     background-image: url("../../img/icon-insta-mobile.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
+
   &_iconed_fb {
     background-image: url("../../img/icon-fb-mobile.svg");
     background-position: center;

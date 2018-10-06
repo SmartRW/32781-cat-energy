@@ -11,7 +11,8 @@
 }
 
 .program__description {
-  @include common-text
+  @include common-text;
+
   &::after {
     content: "";
     display: block;

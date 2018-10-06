@@ -6,6 +6,7 @@
 
 .show-more__expand-button {
   @include product-header;
+
   &::before {
     content: "";
     display: block;
