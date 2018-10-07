@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.slider__item_hidden {
+  display: none;
+}
+
 .slider__control {
   background: none;
   border: none;
@@ -10,7 +14,7 @@
   font-family: $oswald-regular;
   font-size: 16px;
   line-height: 20px;
-  color: $grey-header;
+  color: $greyDarker;
   text-transform: uppercase;
 }
 

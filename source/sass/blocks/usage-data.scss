@@ -18,7 +18,7 @@
   width: 87px;
   padding: 0 10px;
   background-color: $grey;
-  color: $grey-text;
+  color: $greyDark;
   font-family: $arial;
   font-size: 12px;
   line-height: 12px;
@@ -30,7 +30,7 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
-  color: $grey-header;
+  color: $greyDarker;
 }
 
 .usage-data__cost {
@@ -38,5 +38,5 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $grey-header;
+  color: $greyDarker;
 }
