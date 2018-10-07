@@ -1,0 +1,18 @@
+.product-card {
+  border-top: 1px solid #ededed;
+}
+
+.product-card__name {
+  @include product-header;
+}
+
+.product-card__data {
+  font-family: $arial;
+  font-size: 12px;
+  line-height: 16px;
+  color: $greyDark;
+}
+
+.product-card__value {
+  text-align: right;
+}

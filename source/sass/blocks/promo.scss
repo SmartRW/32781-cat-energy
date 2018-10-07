@@ -1,0 +1,29 @@
+.promo {
+  background-image: url("../../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #63a73a 0, #63a73a 305px, #ffffff 305px, #ffffff 100%);
+  background-position: top center;
+  background-repeat: no-repeat;
+  font-family: $oswald-regular;
+  color: #ffffff;
+  text-align: center;
+}
+
+.promo__header {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.promo__motto {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.promo__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.promo__button {
+  font-size: 14px;
+  line-height: 18px;
+}

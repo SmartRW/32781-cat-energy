@@ -1,0 +1,29 @@
+.program {
+  background-color: $grey;
+}
+
+.program__header {
+  font-family: $oswald-regular;
+  font-size: 24px;
+  line-height: 37px;
+  color: $greyDarker;
+  text-transform: uppercase;
+}
+
+.program__description {
+  @include common-text;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    margin-top: 20px;
+    background-color: #d9d9d9;
+  }
+}
+
+.program__link-to-catalog {
+  font-family: $oswald-regular;
+  color: $greyDarker;
+  text-transform: uppercase;
+}

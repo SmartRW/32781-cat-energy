@@ -1,0 +1,27 @@
+.show-more {
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  text-align: center;
+}
+
+.show-more__expand-button {
+  @include product-header;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background-image: url("../../img/icon-plus-mobile.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.show-more__description {
+  font-family: $arial;
+  font-size: 12px;
+  line-height: 16px;
+  color: $greyDark;
+}

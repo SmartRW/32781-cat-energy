@@ -1,0 +1,11 @@
+.usage-example {
+  background-color: $grey;
+}
+
+.usage-example__header {
+  @include section-header;
+}
+
+.usage-example__description {
+  @include common-text;
+}

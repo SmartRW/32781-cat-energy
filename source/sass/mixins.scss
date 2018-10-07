@@ -1,0 +1,28 @@
+@mixin common-text {
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 18px;
+  color: $greyDark;
+}
+
+@mixin section-header {
+  font-family: $oswald-regular;
+  font-size: 36px;
+  line-height: 60px;
+  color: $greyDarker;
+}
+
+@mixin product-header {
+  font-family: $oswald-regular;
+  font-size: 16px;
+  line-height: 20px;
+  color: $greyDarker;
+  text-transform: uppercase;
+}
+
+@mixin form-text {
+  font-family: $oswald-regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: $greyDarker;
+}
