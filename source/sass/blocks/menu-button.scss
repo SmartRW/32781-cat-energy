@@ -1,15 +1,23 @@
 .menu-button {
   display: block;
-  width: 65px;
-  height: 65px;
+  width: 18px;
+  height: 38px;
   background-color: transparent;
   border: none;
 
   &_opened {
-    background-image: none;
+    background-image: url("../../img/icon-close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &_closed {
-    background-image: none;
+    background-image: url("../../img/icon-mobile-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

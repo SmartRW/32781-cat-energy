@@ -2,13 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
     <header class="header">
       <div class="header__wrapper">
-        <a class="header__logo" href="./index.html">
+        <a class="header__logo">
           <img class="header__logo-image" src="./img/logo-mobile.svg" width="191" height="38" alt="Логотип магазина Cat Energy">
         </a>
         <button class="menu-button menu-button_opened" type="button">
@@ -16,15 +17,15 @@
         </button>
       </div>
       <nav class="main-navigation">
-        <ul class="project-list">
+        <ul class="project-list main-navigation__list">
           <li class="main-navigation__item">
-            <a href="./index.html">Главная</a>
+            <a class="main-navigation__link" href="./index.html">Главная</a>
           </li>
           <li class="main-navigation__item">
-            <a>Каталог продукции</a>
+            <a class="main-navigation__link main-navigation__link_active">Каталог продукции</a>
           </li>
           <li class="main-navigation__item">
-            <a href="./form.html">Подбор программы</a>
+            <a class="main-navigation__link" href="./form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>

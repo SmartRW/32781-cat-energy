@@ -3,6 +3,11 @@
   font-size: 14px;
   line-height: 18px;
   color: $greyDark;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @mixin section-header {
@@ -10,6 +15,10 @@
   font-size: 36px;
   line-height: 60px;
   color: $greyDarker;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
 }
 
 @mixin product-header {
