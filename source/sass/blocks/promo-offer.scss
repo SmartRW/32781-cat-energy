@@ -6,8 +6,18 @@
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   background-color: #63a73a;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
 }
 
 .promo-offer__description {

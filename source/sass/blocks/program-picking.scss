@@ -1,3 +1,9 @@
+.program-picking__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .program-picking__fieldset {
   border: none;
 }

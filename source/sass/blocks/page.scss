@@ -2,7 +2,9 @@
   position: relative;
   min-width: 320px;
   margin: 0 auto;
+}
 
+.page_background {
   &::after {
     @media (min-width: $desktop-width) {
       content: "";

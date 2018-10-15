@@ -1,3 +1,7 @@
+.extras {
+  padding: 0 20px;
+}
+
 .extras__header {
   font-family: $oswald-regular;
   font-size: 24px;
@@ -10,6 +14,13 @@
 
   &:last-child {
     border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 40px;
   }
 }
 
@@ -27,4 +38,12 @@
 
 .extras__price {
   text-align: right;
+}
+
+.extras__button {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }

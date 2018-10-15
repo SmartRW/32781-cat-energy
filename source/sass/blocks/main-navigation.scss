@@ -46,7 +46,9 @@
     font-size: 18px;
     line-height: 25px;
   }
+}
 
+.main-navigation__link_on-main {
   @media (min-width: $desktop-width) {
     color: #ffffff;
   }
@@ -63,7 +65,11 @@
       height: 2px;
       background-color: $green;
     }
+  }
+}
 
+.main-navigation__link_active_on-main {
+  &::after {
     @media (min-width: $desktop-width) {
       background-color: #ffffff;
     }
