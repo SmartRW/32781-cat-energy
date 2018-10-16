@@ -1,8 +1,30 @@
+.extras {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .extras__header {
+  width: 100%;
   font-family: $oswald-regular;
   font-size: 24px;
   line-height: 24px;
   color: $greyDarker;
+}
+
+.extras__list {
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+  }
 }
 
 .extras__card {
@@ -10,6 +32,13 @@
 
   &:last-child {
     border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 40px;
   }
 }
 
@@ -27,4 +56,12 @@
 
 .extras__price {
   text-align: right;
+}
+
+.extras__button {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }

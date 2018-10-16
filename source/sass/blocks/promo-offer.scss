@@ -1,13 +1,24 @@
 .promo-offer {
-  width: 280px;
+  width: 100%;
   min-height: 289px;
   box-sizing: border-box;
   padding: 50px;
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   background-color: #63a73a;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-left: 80px;
+  }
 }
 
 .promo-offer__description {

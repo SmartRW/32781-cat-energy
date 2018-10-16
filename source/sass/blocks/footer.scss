@@ -1,11 +1,44 @@
+.footer {
+  position: relative;
+}
+
+.footer__address-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 100px;
+    width: 570px;
+    background-color: #ffffff;
+  }
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+}
+
 .footer__partnership {
-  width: 50%;
+  width: 45%;
 
   @include product-header;
 }
 
 .footer__address {
-  width: 50%;
+  width: 45%;
 
   @include common-text;
   line-height: 20px;
@@ -13,11 +46,21 @@
 
 .footer__map {
   display: block;
+  width: 100%;
   border: none;
   background-image: url("../../img/map.png");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f9f9f9;
+}
+
+.footer__logo {
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 .footer__copyright {
