@@ -1,11 +1,28 @@
-.program-picking__container {
+.program-picking {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
   @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
+.program-picking__container {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 }
 
 .program-picking__fieldset {
   border: none;
+}
+
+.program-picking__input-item {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .program-picking__description {
@@ -21,6 +38,7 @@
 .program-picking__text-field {
   padding: 10px;
   border: 1px solid #e6e6e6;
+  flex-grow: 1;
 
   &::placeholder {
     @include form-text;
@@ -43,6 +61,7 @@
   height: 150px;
   border: 1px solid #e6e6e6;
   resize: none;
+  width: 100%;
 
   &::placeholder {
     @include form-text;

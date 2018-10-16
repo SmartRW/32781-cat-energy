@@ -34,7 +34,7 @@
       <h1 class="page-header">Подбор программы</h1>
       <form class="program-picking" action="https://echo.htmlacademy.ru/" method="post">
         <p class="program-picking__description">
-          Заполните анкету и мы программу питания для вашего кота
+          Заполните анкету и мы подберем программу питания для вашего кота
         </p>
         <div class="program-picking__container">
           <fieldset class="program-picking__fieldset">
@@ -60,8 +60,8 @@
             </ul>
           </fieldset>
           <fieldset class="program-picking__fieldset">
-            <ul class="project-list program-picking__inputs-list">
-              <li class="program-picking__input-item">
+            <ul class="project-list program-picking__inputs-list program-picking__inputs-list_bordered">
+              <li class="program-picking__input-item radio-list__item">
                 <input class="visually-hidden" type="radio" id="weight-loss" value="weight-loss" name="program-target" checked>
                 <label class="program-picking__radio" for="weight-loss">
                   Похудение
@@ -111,26 +111,26 @@
           <legend class="program-picking__fieldset-header">
             Дополнительно
           </legend>
-          <ul class="project-list program-picking__inputs-list program-picking__container">
-            <li class="program-picking__input-item">
+          <ul class="project-list program-picking__inputs-list program-picking__inputs-list_bordered checkbox-list">
+            <li class="program-picking__input-item checkbox-list__item">
               <label class="program-picking__field-description" for="sweetener">
                 Сахарозаменитель
               </label>
               <input class="visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked>
             </li>
-            <li class="program-picking__input-item">
+            <li class="program-picking__input-item checkbox-list__item">
               <label class="program-picking__field-description" for="water">
                 Питьевая вода
               </label>
               <input class="visually-hidden" type="checkbox" id="water" name="water">
             </li>
-            <li class="program-picking__input-item">
+            <li class="program-picking__input-item checkbox-list__item">
               <label class="program-picking__field-description" for="milk">
                 Молоко
               </label>
               <input class="visually-hidden" type="checkbox" id="milk" name="milk">
             </li>
-            <li class="program-picking__input-item">
+            <li class="program-picking__input-item checkbox-list__item">
               <label class="program-picking__field-description" for="vitamins">
                 Витамины
               </label>

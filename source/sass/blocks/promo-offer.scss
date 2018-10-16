@@ -1,5 +1,5 @@
 .promo-offer {
-  width: 280px;
+  width: 100%;
   min-height: 289px;
   box-sizing: border-box;
   padding: 50px;
@@ -11,12 +11,13 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: calc(100% - 60px);
+    width: auto;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
+    margin-left: 80px;
   }
 }
 

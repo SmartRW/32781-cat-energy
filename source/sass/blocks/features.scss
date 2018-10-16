@@ -1,4 +1,5 @@
 .features {
+  box-sizing: border-box;
   padding: 20px;
 
   @media (min-width: $tablet-width) {
@@ -15,6 +16,8 @@
 }
 
 .features__list {
+  box-sizing: border-box;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -27,6 +30,7 @@
   @include common-text;
   box-sizing: border-box;
   min-height: 60px;
+  width: 100%;
   margin-bottom: 20px;
 
   &::before {
@@ -49,21 +53,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    flex-grow: 1;
-    width: 46%;
+    width: 50%;
     min-height: 240px;
   }
 
   @media (min-width: $desktop-width) {
-    width: auto;
-    flex-grow: 1;
+    width: 25%;
     min-height: 240px;
-  }
-
-  &:nth-child(2n+1) {
-    @media (min-width: $tablet-width) {
-      margin-right: 20px;
-    }
   }
 }
 

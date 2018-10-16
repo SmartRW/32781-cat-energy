@@ -11,13 +11,8 @@
     justify-content: flex-end;
     min-height: 540px;
     border-top: none;
-    width: 45%;
     padding: 0 40px 40px;
     background-image: linear-gradient(to top, #f2f2f2 0, #f2f2f2 431px, transparent 431px, transparent 100%);
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 23%;
   }
 }
 

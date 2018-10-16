@@ -1,0 +1,30 @@
+.products {
+  @media (min-width: $desktop-width) {
+    padding: 0 70px;
+  }
+}
+
+.products__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+}
+
+.products__item {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+    padding: 40px;
+  }
+}
