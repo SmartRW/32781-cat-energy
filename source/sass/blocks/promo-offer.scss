@@ -1,8 +1,13 @@
 .promo-offer {
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   min-height: 289px;
   box-sizing: border-box;
-  padding: 50px;
+  margin: 0 20px 35px;
+  padding: 64px 50px 26px;
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -11,13 +16,36 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: flex-start;
     width: auto;
-    margin: 0 auto;
+    align-self: stretch;
+    min-height: 200px;
+    margin: 0 30px 76px;
+    padding: 64px 91px 40px;
   }
 
   @media (min-width: $desktop-width) {
-    width: auto;
-    margin-left: 80px;
+    width: 245px;
+    min-height: 0;
+    margin-left: 50px;
+    margin-right: 110px;
+    margin-bottom: 0;
+    padding: 64px 30px 40px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 60px;
+    background-image: url("../../img/icon-gift.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: $desktop-width) {
+      margin: 0 auto;
+    }
   }
 }
 
@@ -26,4 +54,17 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 165px;
+    margin-top: 8px;
+    margin-right: 30px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    text-align: center;
+    margin: 55px auto 0;
+  }
 }

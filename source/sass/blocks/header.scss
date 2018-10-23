@@ -1,9 +1,9 @@
 .header {
-  padding-top: 10px;
+  padding-top: 11px;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding: 25px 30px;
+    padding: 23px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,10 +14,36 @@
 .header__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  min-height: 54px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+  }
+}
+
+.header__logo-image {
+  width: 191px;
+  height: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 173px;
+    height: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.header__logo-image_clickable {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

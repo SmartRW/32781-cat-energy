@@ -13,7 +13,7 @@
 @mixin section-header {
   font-family: $oswald-regular;
   font-size: 36px;
-  line-height: 60px;
+  line-height: 36px;
   color: $greyDarker;
 
   @media (min-width: $tablet-width) {
