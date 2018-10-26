@@ -34,4 +34,102 @@
   font-size: 16px;
   line-height: 18px;
   color: $greyDarker;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@mixin inputs-list-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin fieldset-header {
+  display: flex;
+  margin-top: 3px;
+  margin-right: 0;
+  margin-bottom: 35px;
+  margin-left: 20px;
+  font-family: $oswald-regular;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+    margin-left: 0;
+  }
+}
+
+@mixin line-around {
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: relative;
+      content: "";
+      width: 28px;
+      height: 3px;
+      margin-right: 40px;
+      background-color: $green;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 71px;
+    }
+  }
+
+  &::after {
+    position: relative;
+    content: "";
+    flex-grow: 1;
+    height: 3px;
+    margin-left: 22px;
+    background-color: $green;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 41px;
+    }
+  }
+}
+
+@mixin text-input {
+  @include form-text;
+  flex-grow: 1;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+  border: 1px solid #e6e6e6;
+  outline: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 14px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &::placeholder {
+    @include form-text;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-color: #444444;
+  }
+
+  // &:invalid {
+  //   border-color: #ff8282;
+  // }
 }

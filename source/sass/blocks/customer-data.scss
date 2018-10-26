@@ -1,0 +1,45 @@
+.customer-data {
+  padding: 0;
+  border: none;
+  margin-bottom: 23px;
+}
+
+.customer-data__inputs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding: 0;
+  }
+}
+
+.customer-data__input-item {
+  @include inputs-list-item;
+
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.customer-data__label {
+  @include form-text;
+  margin-right: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 21px;
+  }
+}
+
+.customer-data__input {
+  @include text-input;
+
+  padding-right: 14px;
+}

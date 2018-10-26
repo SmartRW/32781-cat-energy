@@ -180,7 +180,7 @@
     width: 24px;
     height: 11px;
     margin-left: 11px;
-    background-image: url(../../img/icon-right-arrow-long.svg);
+    background-image: url("../../img/icon-right-arrow-long.svg");
     background-position: center;
     background-repeat: no-repeat;
 
@@ -195,7 +195,7 @@
 
   &:hover::after {
     width: 32px;
-    background-image: url(../../img/icon-right-arrow-verylong.svg);
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
   }
 
   @media (min-width: $tablet-width) {

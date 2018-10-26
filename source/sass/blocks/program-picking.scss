@@ -1,77 +1,91 @@
 .program-picking {
+  padding: 0;
+  margin-bottom: 33px;
+}
+
+.program-picking__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 42px;
+    padding: 0 110px;
+  }
+}
+
+.program-picking__fieldset {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.program-picking__description {
+  @include form-text;
+  margin: -3px 0 41px;
   padding: 0 20px;
+  font-size: 14px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    width: 325px;
+    margin-left: 50px;
+    margin-top: 68px;
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    margin-left: 90px;
   }
 }
 
 .program-picking__container {
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+    padding-left: 110px;
+    padding-right: 210px;
   }
 }
 
-.program-picking__fieldset {
-  border: none;
-}
+.program-picking__order-button {
+  margin: 0 auto;
 
-.program-picking__input-item {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.program-picking__description {
-  @include form-text;
-  text-transform: uppercase;
-}
-
-.program-picking__field-description {
-  @include form-text;
-  text-transform: uppercase;
-}
-
-.program-picking__text-field {
-  padding: 10px;
-  border: 1px solid #e6e6e6;
-  flex-grow: 1;
-
-  &::placeholder {
-    @include form-text;
-    text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-right: 67px;
+    font-size: 20px;
+    line-height: 20px;
   }
-}
 
-.program-picking__radio {
-  @include form-text;
-  text-transform: uppercase;
-}
-
-.program-picking__fieldset-header {
-  font-family: $oswald-regular;
-  font-size: 24px;
-  line-height: 24px;
-}
-
-.program-picking__comment-field {
-  height: 150px;
-  border: 1px solid #e6e6e6;
-  resize: none;
-  width: 100%;
-
-  &::placeholder {
-    @include form-text;
-    text-transform: uppercase;
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    margin-right: 80px;
   }
 }
 
 .program-picking__footnote {
+  margin: 20px 0;
   font-family: $arial;
   font-size: 14px;
   line-height: 16px;
   color: $greyDark;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    text-align: left;
+  }
 }

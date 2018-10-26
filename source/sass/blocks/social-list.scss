@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  list-style: none;
   margin: 0 auto;
   padding: 4px 0;
   border-top: 1px solid #d9d9d9;
@@ -21,16 +22,16 @@
   align-items: center;
   width: 54px;
   height: 54px;
-  fill:#3e4242;
+  fill: #3e4242;
 
- &:hover svg,
- &:focus svg {
-   fill: $green;
- }
+  &:hover svg,
+  &:focus svg {
+    fill: $green;
+  }
 
- &:active svg {
-   fill-opacity: 0.3;
- }
+  &:active svg {
+    fill-opacity: 0.3;
+  }
 }
 
 .social-list__button svg {
