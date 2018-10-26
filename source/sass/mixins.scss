@@ -15,6 +15,7 @@
   font-size: 36px;
   line-height: 36px;
   color: $greyDarker;
+  font-weight: normal;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -27,6 +28,7 @@
   line-height: 20px;
   color: $greyDarker;
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 @mixin form-text {

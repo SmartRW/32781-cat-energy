@@ -88,22 +88,22 @@
 .owner-data__input-icon {
   position: absolute;
   fill: #222222;
-}
 
-.owner-data__input-icon_mail {
-  right: 15px;
-  top: 15px;
+  &_mail {
+    right: 15px;
+    top: 15px;
 
-  @media (min-width: $tablet-width) {
-    top: 20px;
+    @media (min-width: $tablet-width) {
+      top: 20px;
+    }
   }
-}
 
-.owner-data__input-icon_phone {
-  right: 14px;
-  top: 14px;
+  &_phone {
+    right: 14px;
+    top: 14px;
 
-  @media (min-width: $tablet-width) {
-    top: 18px;
+    @media (min-width: $tablet-width) {
+      top: 18px;
+    }
   }
 }

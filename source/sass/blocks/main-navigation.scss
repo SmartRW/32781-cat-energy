@@ -43,7 +43,6 @@
   text-decoration: none;
   color: $greyDarker;
 
-
   @media (min-width: $tablet-width) {
     border-bottom: none;
     font-family: $oswald-regular;
@@ -63,40 +62,40 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
   }
-}
 
-.main-navigation__link_on-main {
-  @media (min-width: $desktop-width) {
-    color: #ffffff;
-  }
-}
-
-.main-navigation__link_active {
-  &::after {
-    @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
-      display: block;
-      bottom: 12px;
-      width: 100%;
-      height: 2px;
-      background-color: $green;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    &:hover,
-    &:focus,
-    &:active {
-      opacity: 1;
-    }
-  }
-}
-
-.main-navigation__link_active_on-main {
-  &::after {
+  &_on-main {
     @media (min-width: $desktop-width) {
-      background-color: #ffffff;
+      color: #ffffff;
+    }
+  }
+
+  &_active {
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: 12px;
+        width: 100%;
+        height: 2px;
+        background-color: $green;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      &:hover,
+      &:focus,
+      &:active {
+        opacity: 1;
+      }
+    }
+  }
+
+  &_active-on-main {
+    &::after {
+      @media (min-width: $desktop-width) {
+        background-color: #ffffff;
+      }
     }
   }
 }

@@ -76,9 +76,10 @@
 
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
-input:checked ~ .extra-goods__label {
+.extra-goods__checkbox:checked ~ .extra-goods__label {
   &::before {
     content: "";
     display: block;
@@ -88,7 +89,7 @@ input:checked ~ .extra-goods__label {
     margin-right: 16px;
     border: 3px solid #ffffff;
     box-shadow: 0 0 0 1px #cecece;
-    background-image: url("../../img/icon-tick.svg");
+    background-image: url("../img/icon-tick.svg");
     background-position: center;
     background-repeat: no-repeat;
 
@@ -104,18 +105,18 @@ input:checked ~ .extra-goods__label {
     box-shadow: 0 0 0 1px #bcbcbc;
   }
 
-  &:active::before {
+  &:active {
     opacity: 0.3;
   }
 }
 
-input:checked:focus ~ .extra-goods__label {
+.extra-goods__checkbox:checked:focus ~ .extra-goods__label {
   &::before {
     box-shadow: 0 0 0 1px #bcbcbc;
   }
 }
 
-input:not(:checked) ~ .extra-goods__label {
+.extra-goods__checkbox:not(:checked) ~ .extra-goods__label {
   &::before {
     content: "";
     display: block;
@@ -138,12 +139,12 @@ input:not(:checked) ~ .extra-goods__label {
     box-shadow: 0 0 0 1px #bcbcbc;
   }
 
-  &:active::before {
+  &:active {
     opacity: 0.3;
   }
 }
 
-input:not(:checked):focus ~ .extra-goods__label {
+.extra-goods__checkbox:not(:checked):focus ~ .extra-goods__label {
   &::before {
     box-shadow: 0 0 0 1px #bcbcbc;
   }

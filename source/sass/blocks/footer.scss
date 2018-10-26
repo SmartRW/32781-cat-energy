@@ -23,18 +23,18 @@
     padding-right: 80px;
     background-color: #ffffff;
   }
-}
 
-.footer__address-cotainer_bg_white {
-  padding-top: 29px;
-  background-color: #ffffff;
+  &_bg_white {
+    padding-top: 29px;
+    background-color: #ffffff;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 70px 55px;
-  }
+    @media (min-width: $tablet-width) {
+      padding: 0 70px 55px;
+    }
 
-  @media (min-width: $desktop-width) {
-    padding: 65px 76px 55px;
+    @media (min-width: $desktop-width) {
+      padding: 65px 76px 55px;
+    }
   }
 }
 
@@ -99,7 +99,7 @@
   width: 100%;
   height: 362px;
   border: none;
-  background-image: url("../../img/map.png");
+  background-image: url("../img/map.png");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f9f9f9;

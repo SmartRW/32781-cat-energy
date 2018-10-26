@@ -28,7 +28,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    width: 570px;
+    width: 47%;
     padding-right: 40px;
   }
 
@@ -72,7 +72,7 @@
     left: 23px;
     width: 50px;
     height: 50px;
-    background-image: url("../../img/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-slim.svg");
 
     @media (min-width: $tablet-width) {
       top: 79px;
@@ -97,7 +97,7 @@
     left: 13px;
     width: 67px;
     height: 50px;
-    background-image: url("../../img/icon-cat-pro.svg");
+    background-image: url("../img/icon-cat-pro.svg");
 
     @media (min-width: $tablet-width) {
       top: 135px;
@@ -126,6 +126,7 @@
   line-height: 37px;
   color: $greyDarker;
   text-transform: uppercase;
+  font-weight: normal;
 
   @media (min-width: $tablet-width) {
     margin: 15px 0;
@@ -180,7 +181,7 @@
     width: 24px;
     height: 11px;
     margin-left: 11px;
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-position: center;
     background-repeat: no-repeat;
 
@@ -195,7 +196,7 @@
 
   &:hover::after {
     width: 32px;
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 
   @media (min-width: $tablet-width) {

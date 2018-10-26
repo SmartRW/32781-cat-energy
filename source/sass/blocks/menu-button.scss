@@ -9,11 +9,11 @@
   background-position: center;
 
   &_opened {
-    background-image: url("../../img/icon-close.svg");
+    background-image: url("../img/icon-close.svg");
   }
 
   &_closed {
-    background-image: url("../../img/icon-mobile-menu.svg");
+    background-image: url("../img/icon-mobile-menu.svg");
   }
 
   @media (min-width: $tablet-width) {

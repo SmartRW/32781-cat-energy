@@ -35,15 +35,15 @@
     width: 202px;
     height: 59px;
   }
-}
 
-.header__logo-image_clickable {
-  &:hover,
-  &:focus {
-    opacity: 0.8;
-  }
+  &_clickable {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
 
-  &:active {
-    opacity: 0.6;
+    &:active {
+      opacity: 0.6;
+    }
   }
 }
