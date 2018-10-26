@@ -1,5 +1,4 @@
 .footer {
-  position: relative;
   background-color: #f2f2f2;
 }
 
@@ -38,6 +37,14 @@
   }
 }
 
+.footer__wrapper {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+
 .footer__container {
   display: flex;
   flex-wrap: wrap;
@@ -49,6 +56,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 0 110px 31px;
   }
 }
