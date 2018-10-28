@@ -2,7 +2,7 @@
   display: block;
   box-sizing: border-box;
   width: 280px;
-  padding: 14px;
+  padding: 11px;
   border: none;
   font-family: $oswald-regular;
   text-transform: uppercase;
@@ -11,10 +11,23 @@
   &_theme_green {
     background-color: $green;
     color: #ffffff;
+
+    &:hover,
+    &:focus {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   &_theme_grey {
     background-color: $grey;
     color: #444444;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 16px;
   }
 }

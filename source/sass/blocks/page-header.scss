@@ -1,9 +1,18 @@
 .page-header {
   @include section-header;
 
+  margin-top: 27px;
+  margin-bottom: 40px;
   padding: 0 20px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 40px;
+    padding: 0 30px;
+  }
+
   @media (min-width: $desktop-width) {
+    margin-top: 26px;
+    margin-bottom: 40px;
     padding: 0 110px;
   }
 }

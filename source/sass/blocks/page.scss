@@ -1,23 +1,22 @@
 .page {
   position: relative;
   min-width: 320px;
-  margin: 0 auto;
-}
 
-.page_background {
-  &::after {
-    @media (min-width: $desktop-width) {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: -1;
-      width: 50%;
-      height: 696px;
-      background-color: #65a93c;
-      background-image: url("../../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
+  &_background {
+    &::after {
+      @media (min-width: $desktop-width) {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -2;
+        width: 50%;
+        height: 696px;
+        background-color: #65a93c;
+        background-image: url("../img/index-background-desktop@1x.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
     }
   }
 }

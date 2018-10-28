@@ -1,28 +1,46 @@
 .features {
   box-sizing: border-box;
-  padding: 20px;
+  padding: 0 20px 28px;
 
   @media (min-width: $tablet-width) {
-    padding: 30px;
+    margin-bottom: 15px;
+    padding: 0;
+    padding-top: 7px;
+    counter-reset: feature;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 110px;
+    padding: 4px 110px;
   }
 }
 
 .features__header {
   @include section-header;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .features__list {
   box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1298px;
   }
 }
 
@@ -32,6 +50,22 @@
   min-height: 60px;
   width: 100%;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 50%;
+    padding: 46px 30px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+    min-height: 240px;
+    padding: 46px 0 50px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &::before {
     content: "";
@@ -48,42 +82,52 @@
 
     @media (min-width: $tablet-width) {
       float: none;
-      margin-bottom: 37px;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 33px;
     }
   }
 
-  @media (min-width: $tablet-width) {
-    width: 50%;
-    min-height: 240px;
+  &::after {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      z-index: -1;
+      top: 135px;
+      left: 143px;
+      counter-increment: feature;
+      content: counter(feature);
+      font-family: $oswald-regular;
+      font-size: 281px;
+      color: #f2f2f2;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 117px;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    width: 25%;
-    min-height: 240px;
+  &_iconed_leaf {
+    &::before {
+      background-image: url("../img/advantage-leaf@1x.png");
+    }
   }
-}
 
-.features__item_iconed_leaf {
-  &::before {
-    background-image: url("../../img/advantage-leaf@1x.png");
+  &_iconed_powder {
+    &::before {
+      background-image: url("../img/advantage-powder@1x.png");
+    }
   }
-}
 
-.features__item_iconed_powder {
-  &::before {
-    background-image: url("../../img/advantage-powder@1x.png");
+  &_iconed_dining {
+    &::before {
+      background-image: url("../img/advantage-dining@1x.png");
+    }
   }
-}
 
-.features__item_iconed_dining {
-  &::before {
-    background-image: url("../../img/advantage-dining@1x.png");
-  }
-}
-
-.features__item_iconed_clock {
-  &::before {
-    background-image: url("../../img/advantage-clock@1x.png");
+  &_iconed_clock {
+    &::before {
+      background-image: url("../img/advantage-clock@1x.png");
+    }
   }
 }
 

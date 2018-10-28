@@ -1,21 +1,32 @@
 .show-more {
   box-sizing: border-box;
-  border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
   text-align: center;
+  padding-top: 26px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    min-height: 540px;
-    padding: 0 40px 40px;
-    border: none;
+    width: 100%;
+    min-height: 432px;
+    padding: 53px 38px 40px;
+    border: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 37px 40px;
   }
 }
 
 .show-more__expand-button {
   @include product-header;
+
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 
   &::before {
     content: "";
@@ -23,9 +34,16 @@
     width: 30px;
     height: 30px;
     margin: 0 auto;
-    background-image: url("../../img/icon-plus-mobile.svg");
+    margin-bottom: 23px;
+    background-image: url("../img/icon-plus.svg");
     background-position: center;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 50px;
+    }
   }
 }
 
@@ -34,4 +52,15 @@
   font-size: 12px;
   line-height: 16px;
   color: $greyDark;
+  margin: 7px 5px 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 84px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 7px 0 84px;
+  }
 }

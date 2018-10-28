@@ -1,20 +1,19 @@
 .menu-button {
   display: block;
-  width: 18px;
-  height: 38px;
+  width: 24px;
+  height: 41px;
+  padding: 0;
   background-color: transparent;
   border: none;
+  background-repeat: no-repeat;
+  background-position: center;
 
   &_opened {
-    background-image: url("../../img/icon-close.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url("../img/icon-close.svg");
   }
 
   &_closed {
-    background-image: url("../../img/icon-mobile-menu.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url("../img/icon-mobile-menu.svg");
   }
 
   @media (min-width: $tablet-width) {
