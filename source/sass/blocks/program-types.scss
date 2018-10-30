@@ -1,5 +1,7 @@
-.program-types {
+.program-types__list {
+  margin: 0;
   padding: 0 20px;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -10,5 +12,40 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 110px;
+  }
+}
+
+.program-types__item {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
+
+  &:nth-child(odd) {
+    @media (min-width: $desktop-width) {
+      padding-right: 40px;
+    }
+  }
+
+  &:nth-child(even) {
+    @media (min-width: $desktop-width) {
+      padding-left: 40px;
+    }
+  }
+
+  &:last-child {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 30px;
+    }
   }
 }

@@ -1,35 +1,18 @@
 .program {
   position: relative;
   box-sizing: border-box;
-  margin-bottom: 20px;
-  padding: 20px;
   background-color: $grey;
-
-  &:last-child {
-    @media (min-width: $tablet-width) {
-      margin-bottom: 0;
-      padding-right: 315px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-right: 40px;
-      margin-bottom: 30px;
-    }
-  }
+  padding: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
     padding-top: 50px;
     padding-left: 50px;
     padding-bottom: 62px;
-    padding-right: 280px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    width: 47%;
-    padding-right: 40px;
   }
 
   &::after {
@@ -67,6 +50,14 @@
 }
 
 .program_iconed_slim {
+  @media (min-width: $tablet-width) {
+    padding-right: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 40px;
+  }
+
   &::after {
     top: 21px;
     left: 23px;
@@ -92,6 +83,14 @@
 }
 
 .program_iconed_pro {
+  @media (min-width: $tablet-width) {
+    padding-right: 315px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 40px;
+  }
+
   &::after {
     top: 24px;
     left: 13px;
