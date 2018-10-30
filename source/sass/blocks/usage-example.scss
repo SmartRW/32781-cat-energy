@@ -11,7 +11,8 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 23px;
     border-top: none;
     background-image: linear-gradient(to top, #f2f2f2 0, #f2f2f2 462px, #ffffff 462px, #ffffff 100%);
   }
@@ -42,6 +43,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 53px;
     margin-bottom: 159px;
   }
 }
