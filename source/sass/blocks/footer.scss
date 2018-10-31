@@ -196,14 +196,20 @@
 }
 
 .footer__academy-logo {
+  display: block;
+  width: 27px;
+  height: 35px;
+}
+
+.footer__academy-logo-icon {
   fill: #3e4242;
 
-  &:hover svg,
-  &:focus svg {
+  &:hover,
+  &:focus {
     fill: $green;
   }
 
-  &:active svg {
+  &:active {
     fill-opacity: 0.3;
   }
 }
