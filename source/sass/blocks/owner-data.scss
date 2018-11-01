@@ -107,3 +107,7 @@
     }
   }
 }
+
+.owner-data__input:focus ~ .owner-data__input-icon {
+  fill: $green;
+}
