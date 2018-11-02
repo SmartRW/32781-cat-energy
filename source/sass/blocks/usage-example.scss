@@ -11,10 +11,11 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
     padding-top: 0;
-    padding-bottom: 23px;
+    padding-bottom: 0;
     border-top: none;
-    background-image: linear-gradient(to top, #f2f2f2 0, #f2f2f2 462px, #ffffff 462px, #ffffff 100%);
+    background-image: linear-gradient(to top, #f2f2f2 0, #f2f2f2 464px, #ffffff 464px, #ffffff 100%);
   }
 }
 
@@ -28,6 +29,7 @@
 
   @media (min-width: $desktop-width) {
     width: 557px;
+    margin-bottom: 0;
     padding: 12px;
     padding-left: 110px;
   }

@@ -199,6 +199,15 @@
   display: block;
   width: 27px;
   height: 35px;
+
+  &:hover svg,
+  &:focus svg {
+    fill: $green;
+  }
+
+  &:active svg {
+    fill-opacity: 0.3;
+  }
 }
 
 .footer__academy-logo-icon {

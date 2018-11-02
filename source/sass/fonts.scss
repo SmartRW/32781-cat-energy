@@ -1,5 +1,6 @@
 @font-face {
   font-family: "Oswald Medium";
+  font-display: swap;
   src: local("Oswald Medium"),
     local("Oswald-Medium"),
     url("../fonts/oswaldmedium.woff2") format("woff2"),
@@ -8,6 +9,7 @@
 
 @font-face {
   font-family: "Oswald Regular";
+  font-display: swap;
   src: local("Oswald Regular"),
     local("Oswald-Regular"),
     url("../fonts/oswaldregular.woff2") format("woff2"),

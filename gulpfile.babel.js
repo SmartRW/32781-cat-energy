@@ -12,13 +12,15 @@ import svgstore from 'gulp-svgstore';
 import posthtml from 'gulp-posthtml';
 import include from 'posthtml-include';
 import del from 'del';
+import htmlmin from 'gulp-htmlmin';
+import jsmin from 'gulp-uglify';
+import babel from 'gulp-babel';
 
 const server = browserSync.create();
 
 gulp.task('copy', () => gulp.src([
-  'source/fonts/**/*.{woff, woff2}',
+  'source/fonts/**/*.{woff,woff2}',
   'source/img/**',
-  'source/js/**',
 ], {
   base: 'source',
 })
@@ -33,7 +35,6 @@ gulp.task('css', () => gulp.src('source/sass/style.scss')
     autoprefixer(),
   ]))
   .pipe(csso())
-  .pipe(rename('style.min.css'))
   .pipe(gulp.dest('build/css'))
   .pipe(server.stream()));
 
@@ -54,6 +55,7 @@ gulp.task('server', () => {
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series('css'));
   gulp.watch('source/img/icon-*.svg', gulp.series('sprite', 'html', 'refresh'));
   gulp.watch('source/*.html', gulp.series('html', 'refresh'));
+  gulp.watch('source/js/*.js', gulp.series('js', 'refresh'));
 });
 
 gulp.task('images', () => gulp.src('source/img/**/*.{png,jpg,svg}')
@@ -77,8 +79,19 @@ gulp.task('html', () => gulp.src('source/*.html')
   .pipe(posthtml([
     include(),
   ]))
+  .pipe(htmlmin({
+    collapseWhitespace: true,
+    collapseInlineTagWhitespace: true,
+    removeComments: true,
+    removeEmptyAttributes: true,
+  }))
   .pipe(gulp.dest('build')));
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html'));
+gulp.task('js', () => gulp.src('source/js/**/*.js')
+  .pipe(babel({ presets: ['es2015'] }))
+  .pipe(jsmin())
+  .pipe(gulp.dest('build/js')));
+
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html', 'js'));
 
 gulp.task('start', gulp.series('build', 'server'));
