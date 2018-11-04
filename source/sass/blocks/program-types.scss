@@ -1,3 +1,9 @@
+.program-types {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
+}
+
 .program-types__list {
   margin: 0;
   padding: 0 20px;
@@ -11,6 +17,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: stretch;
     padding: 0 110px;
   }
 }
@@ -24,6 +31,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: flex; // HACK: fixes ie11 flex-bug;
     width: 50%;
   }
 

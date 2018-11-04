@@ -15,6 +15,7 @@ import del from 'del';
 import htmlmin from 'gulp-htmlmin';
 import jsmin from 'gulp-uglify';
 import babel from 'gulp-babel';
+import concat from 'gulp-concat';
 
 const server = browserSync.create();
 
@@ -88,6 +89,7 @@ gulp.task('html', () => gulp.src('source/*.html')
   .pipe(gulp.dest('build')));
 
 gulp.task('js', () => gulp.src('source/js/**/*.js')
+  .pipe(concat('script.js'))
   .pipe(babel({ presets: ['es2015'] }))
   .pipe(jsmin())
   .pipe(gulp.dest('build/js')));

@@ -1,22 +1,23 @@
 .slider {
   position: relative;
+  background-image: linear-gradient(to top, transparent 0, transparent 462px, #ffffff 462px, #ffffff 100%), linear-gradient(to right, #f2f2f2 0, #f2f2f2 50%, #eaeaea 50%, #eaeaea 100%);
+
+  @media (min-width: $desktop-width) {
+    padding-right: 77px;
+  }
 }
 
 .slider__list {
   position: relative;
-  list-style: none;
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 22px;
   padding: 0;
-  margin-bottom: 28px;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to top, #eaeaea 0, #eaeaea 464px, #ffffff 464px, #ffffff 100%);
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to top, #eaeaea 0, #eaeaea 464px, #ffffff 464px, #ffffff 100%);
+    width: 680px;
     margin-bottom: 0;
-    padding-right: 71px;
   }
 }
 
@@ -39,17 +40,12 @@
     z-index: 2;
 
     @media (min-width: $tablet-width) {
-      background-image: linear-gradient(to top, #f2f2f2 0, #f2f2f2 464px, #ffffff 464px, #ffffff 100%);
+      background-image: linear-gradient(to top, #f2f2f2 0, #f2f2f2 462px, #ffffff 462px, #ffffff 100%);
       width: 50%;
       overflow: hidden;
-      padding-left: 46px;
-      padding-top: 4px;
     }
 
     @media (min-width: $desktop-width) {
-      background-image: linear-gradient(to top, #f2f2f2 0, #f2f2f2 464px, #ffffff 464px, #ffffff 100%);
-      padding-left: 0;
-      padding-top: 0;
       width: 53%;
     }
   }
@@ -62,24 +58,17 @@
     width: 100%;
 
     @media (min-width: $tablet-width) {
-      background-image: linear-gradient(to top, #eaeaea 0, #eaeaea 464px, #ffffff 464px, #ffffff 100%);
-      padding-left: 13px;
-    }
-
-    @media (min-width: $desktop-width) {
-      background-image: linear-gradient(to top, #eaeaea 0, #eaeaea 464px, #ffffff 464px, #ffffff 100%);
-      padding-left: 0;
-      padding-right: 70px;
+      background-image: linear-gradient(to top, #eaeaea 0, #eaeaea 462px, #ffffff 462px, #ffffff 100%);
     }
   }
 }
 
 .slider__image {
+  width: 320px;
   height: auto;
 
   @media (min-width: $tablet-width) {
-    width: 690px;
-    box-sizing: border-box;
+    width: auto;
   }
 }
 
@@ -98,7 +87,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    right: 14px;
+    right: 18px;
   }
 }
 
@@ -112,6 +101,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
+    top: -14px;
     left: calc(50% - 16px);
     width: 8px;
     height: 8px;
