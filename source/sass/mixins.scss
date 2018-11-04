@@ -40,7 +40,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 30px;
   }
 }
 
@@ -106,17 +106,20 @@
 
 @mixin text-input {
   @include form-text;
+  box-sizing: border-box;
   flex-grow: 1;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 14px;
   border: 1px solid #e6e6e6;
-  outline: none;
+  border-radius: 0;
+  box-shadow: none;
+  min-width: 0; // HACK: fixes FF flexbug
 
   @media (min-width: $tablet-width) {
-    padding: 10px 14px;
-    font-size: 20px;
-    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 14px;
   }
 
   &::placeholder {
@@ -128,8 +131,16 @@
   }
 
   &:focus {
-    padding: 9px 13px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 13px;
     border: 2px solid #444444;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 9px;
+      padding-bottom: 9px;
+      padding-left: 13px;
+    }
   }
 
   // &:invalid {

@@ -56,7 +56,11 @@
 
   @media (min-width: $tablet-width) {
     width: 324px;
-    margin-top: auto;
+    align-self: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
   }
 }
 
