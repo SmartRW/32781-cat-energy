@@ -25,7 +25,6 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 268px;
-    padding-left: 190px;
   }
 }
 
@@ -76,13 +75,13 @@
     z-index: -1;
     width: 709px;
     left: 29px;
-    bottom: -3px;
+    top: 230px;
   }
 
   @media (min-width: $desktop-width) {
     width: 552px;
-    bottom: 133px;
-    left: 560px;
+    top: -33px;
+    left: 490px;
   }
 }
 

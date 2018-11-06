@@ -3,7 +3,9 @@
   background-image: linear-gradient(to top, transparent 0, transparent 462px, #ffffff 462px, #ffffff 100%), linear-gradient(to right, #f2f2f2 0, #f2f2f2 50%, #eaeaea 50%, #eaeaea 100%);
 
   @media (min-width: $desktop-width) {
-    padding-right: 77px;
+    align-self: flex-end;
+    padding-right: 6px;
+    overflow: hidden;
   }
 }
 
@@ -87,7 +89,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    right: 18px;
+    left: 20px;
   }
 }
 

@@ -8,7 +8,7 @@
   margin: 0 20px 35px;
   padding: 64px 0 26px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #63a73a;
@@ -37,7 +37,7 @@
     width: 245px;
     min-height: 0;
     margin-left: 50px;
-    margin-right: 110px;
+    margin-right: 40px;
     margin-bottom: 0;
     padding: 64px 30px 40px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");

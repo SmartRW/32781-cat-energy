@@ -39,14 +39,17 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding-right: 9px;
     padding-left: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 30px;
-    padding-left: 110px;
+    box-sizing: border-box;
+    width: $desktop-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -61,7 +64,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    box-sizing: border-box;
     width: 25%;
+    padding-left: 40px;
   }
 
   &:last-child {
@@ -142,11 +147,5 @@
 
   &:active {
     opacity: 0.3;
-  }
-}
-
-.extra-goods__checkbox:not(:checked):focus ~ .extra-goods__label {
-  &::before {
-    box-shadow: 0 0 0 1px #bcbcbc;
   }
 }

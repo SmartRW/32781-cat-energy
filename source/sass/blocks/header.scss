@@ -1,6 +1,6 @@
 .header {
   padding-top: 11px;
-  max-width: 1440px;
+  max-width: $desktop-width;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 55px 110px;
+    padding: 55px 40px;
   }
 }
 

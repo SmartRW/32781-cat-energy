@@ -1,8 +1,5 @@
 .extras {
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin-bottom: 87px;
   }
 }
@@ -50,6 +47,16 @@
   }
 }
 
+.extras__container {
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .extras__list {
   list-style: none;
   margin: 0;
@@ -57,7 +64,7 @@
 
   @media (min-width: $desktop-width) {
     flex-grow: 1;
-    margin-left: 110px;
+    margin-left: 40px;
   }
 }
 

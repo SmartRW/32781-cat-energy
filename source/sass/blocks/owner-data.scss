@@ -52,7 +52,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 17px 110px;
+    box-sizing: border-box;
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 17px 40px;
   }
 }
 

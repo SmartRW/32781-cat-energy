@@ -2,7 +2,7 @@
   margin-left: auto;
 
   @media (min-width: $desktop-width) {
-    max-width: 50%;
+    width: 50%;
   }
 }
 
@@ -15,7 +15,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    margin-left: auto;
+    justify-content: flex-end;
     border-top: none;
   }
 }
@@ -23,10 +23,6 @@
 .main-navigation__item {
   @media (min-width: $tablet-width) {
     margin-left: 35px;
-
-    &:first-child {
-      margin: 0;
-    }
   }
 }
 

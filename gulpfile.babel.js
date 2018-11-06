@@ -21,7 +21,7 @@ const server = browserSync.create();
 
 gulp.task('copy', () => gulp.src([
   'source/fonts/**/*.{woff,woff2}',
-  'source/img/**',
+  'source/img/**', '!source/img/**/sprite-*.svg',
 ], {
   base: 'source',
 })
@@ -65,11 +65,11 @@ gulp.task('images', () => gulp.src('source/img/**/*.{png,jpg,svg}')
     imagemin.jpegtran({ progressive: true }),
     imagemin.svgo(),
   ]))
-  .pipe(gulp.dest('build/img')));
+  .pipe(gulp.dest('source/img')));
 
 gulp.task('webp', () => gulp.src('source/img/**/*.{png,jpg}')
   .pipe(webp({ quality: 90 }))
-  .pipe(gulp.dest('build/img')));
+  .pipe(gulp.dest('source/img')));
 
 gulp.task('sprite', () => gulp.src('source/img/sprite-*.svg')
   .pipe(svgstore({ inlineSvg: true }))

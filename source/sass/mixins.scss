@@ -86,7 +86,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 71px;
+      width: calc((100% - 1300px) / 2);
     }
   }
 

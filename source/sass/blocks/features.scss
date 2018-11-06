@@ -1,6 +1,6 @@
 .features {
   box-sizing: border-box;
-  padding: 0 20px 28px;
+  padding: 0 20px 22px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 15px;
@@ -11,7 +11,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 6px;
-    padding: 0 110px;
+    padding: 0;
   }
 }
 
@@ -24,7 +24,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding: 0 40px;
   }
 }
 
@@ -37,11 +37,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1298px;
+
   }
 }
 
@@ -62,11 +61,10 @@
     width: 25%;
     min-height: 240px;
     margin-bottom: 0;
-    padding: 46px 0 50px;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
+    padding-top: 46px;
+    padding-right: 0;
+    padding-bottom: 50px;
+    padding-left: 40px;
   }
 
   &::before {
@@ -105,7 +103,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      left: 117px;
+      left: 155px;
     }
   }
 

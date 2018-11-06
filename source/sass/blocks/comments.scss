@@ -36,7 +36,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px;
+    box-sizing: border-box;
+    width: $desktop-width;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 

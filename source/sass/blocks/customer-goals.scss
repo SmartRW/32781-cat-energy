@@ -108,6 +108,6 @@
 
 .customer-goals__radio:not(:checked):focus ~ .customer-goals__label {
   &::before {
-    box-shadow: 0 0 0 1px #bcbcbc;
+    box-shadow: 0 0 0 1px #ff0000;
   }
 }
