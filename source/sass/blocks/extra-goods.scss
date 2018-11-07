@@ -118,7 +118,7 @@
 
 .extra-goods__checkbox:checked:focus ~ .extra-goods__label {
   &::before {
-    box-shadow: 0 0 0 1px #bcbcbc;
+    box-shadow: 0 0 0 2px #444444;
   }
 }
 
@@ -147,5 +147,11 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.extra-goods__checkbox:not(:checked):focus ~ .extra-goods__label {
+  &::before {
+    box-shadow: 0 0 0 2px #444444;
   }
 }
