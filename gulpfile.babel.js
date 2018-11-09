@@ -65,7 +65,7 @@ gulp.task('images', () => gulp.src('source/img/**/*.{png,jpg,svg}')
     imagemin.jpegtran({ progressive: true }),
     imagemin.svgo(),
   ]))
-  .pipe(gulp.dest('build/img')));
+  .pipe(gulp.dest('source/img')));
 
 gulp.task('webp', () => gulp.src('source/img/**/*.{png,jpg}')
   .pipe(webp({ quality: 90 }))
@@ -94,6 +94,6 @@ gulp.task('js', () => gulp.src('source/js/**/*.js')
   .pipe(jsmin())
   .pipe(gulp.dest('build/js')));
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html', 'js', 'images'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html', 'js'));
 
 gulp.task('start', gulp.series('build', 'server'));
